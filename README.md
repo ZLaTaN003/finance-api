@@ -89,30 +89,36 @@ Access control is implemented using a custom decorator:
 
 ## API Endpoints
 
-Users
-GET /api/users
-POST /api/users
-PATCH /api/users/<id>
-DELETE /api/users/<id>
+## API Endpoints
 
-Optional: Filter by status: /api/users?status=ACTIVE
+### Users
 
-Records
-GET /api/records
-POST /api/records
-PATCH /api/records/<id>
-DELETE /api/records/<id>
+- GET `/api/users`
+- POST `/api/users`
+- PATCH `/api/users/<id>`
+- DELETE `/api/users/<id>`
 
-Dashboard Insights
-/api/records/insights
+Optional:
+
+- Filter by status: `/api/users?status=ACTIVE`
+
+### Records
+
+- GET `/api/records`
+- POST `/api/records`
+- PATCH `/api/records/<id>`
+- DELETE `/api/records/<id>`
+
+### Dashboard Insights
+
+- GET `/api/records/insights`
 
 ### Sample Requests
 
 Create User
 
-POST /api/users
-Headers:
-Role: ADMIN
+POST /api/users  
+Headers: Role: ADMIN
 
 Body:
 {
@@ -123,9 +129,8 @@ Body:
 
 Create Record
 
-POST /api/records
-Headers:
-Role: ADMIN
+POST /api/records  
+Headers: Role: ADMIN
 
 Body:
 {
