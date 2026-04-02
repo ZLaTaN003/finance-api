@@ -89,8 +89,6 @@ Access control is implemented using a custom decorator:
 
 ## API Endpoints
 
-## API Endpoints
-
 ### Users
 
 - GET `/api/users`
